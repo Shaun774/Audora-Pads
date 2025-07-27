@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Pads</title>
+    <!-- <style>
+        .tile-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .tile {
+            height: 200px;
+            width: 200px;
+            background: #ac27ff;
+            border: 1px solid;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: white;
+            font-size: 24px;
+        }
+    </style> -->
+    <link rel="stylesheet" href="stytle.css">
+</head>
+
+<body>
+    <div class="tile-container">
+        <div class="tile" onclick="PlayPads('c')">C</div>
+        <div class="tile" onclick="PlayPads('c#')">C#</div>
+        <div class="tile" onclick="PlayPads('d')">D</div>
+        <div class="tile" onclick="PlayPads('d#')">D#</div>
+        <div class="tile" onclick="PlayPads('e')">E</div>
+        <div class="tile" onclick="PlayPads('f')">F</div>
+        <div class="tile" onclick="PlayPads('f#')">F#</div>
+        <div class="tile" onclick="PlayPads('g')">G</div>
+        <div class="tile" onclick="PlayPads('g#')">G#</div>
+        <div class="tile" onclick="PlayPads('a')">A</div>
+        <div class="tile" onclick="PlayPads('a#')">A#</div>
+        <div class="tile" onclick="PlayPads('b')">B</div>
+
+        <audio id="CPad">
+            <source src="/static/CPad.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="C#Pad">
+            <source src="/static/CsPad.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="DPad">
+            <source src="/static/DPad.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="D#Pad">
+            <source src="/static/DsPad.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="EPad">
+            <source src="/static/EPad.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="FPad">
+            <source src="/static/FPad.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="F#Pad">
+            <source src="/static/FsPad.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="GPad">
+            <source src="/static/GPad.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="G#Pad">
+            <source src="/static/GsPad.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="APad">
+            <source src="/static/APad.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="A#Pad">
+            <source src="/static/AsPad.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="BPad">
+            <source src="/static/BPad.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <footer>
+        <p>&copy; <span class="logo">Audora</span></p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
