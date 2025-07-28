@@ -160,3 +160,14 @@ footer span::before {
   left: 0;
   color: var(--accent-color);
 }
+
+
+
+.tile:focus {
+  outline: none;
+}
+
+.tile {
+  -webkit-tap-highlight-color: transparent; /* For mobile browsers */
+  user-select: none; /* Prevent text selection */
+}
